@@ -4,5 +4,9 @@ linker = "arm-linux-gnueabihf-gcc"
 [target.aarch64-unknown-linux-gnu]
 linker = "aarch64-linux-gnu-gcc"
 
+#https://musl.cc/#binaries
+[target.aarch64-unknown-linux-musl]
+linker = "<REPLACE PATH TO>/aarch64-linux-musl-cross/bin/aarch64-linux-musl-gcc"
+
 [target.x86_64-unknown-linux-musl]
 linker = "x86_64-linux-musl-gcc"
